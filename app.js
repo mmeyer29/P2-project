@@ -40,6 +40,8 @@ function getPilots(event) {
 
 form.addEventListener('submit', function(event) {
 	event.preventDefault()
+	var $ul = document.querySelector(".pilots")
+	$ul.innerHTML = "";
 	var pilots
 	getPilots()
 	//console.log("may the force be with you");
