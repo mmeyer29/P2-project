@@ -6,7 +6,6 @@ var vehicleData = new FormData
 function getPilots(event) {
 	var vehicleData = new FormData(form)
 	ship = vehicleData.get("vehicle")
-	console.log(ship)
 	fetch("https://swapi.co/api/starships/")
 		.then(function(response, request) {
 			return response.json()
